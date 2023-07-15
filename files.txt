@@ -1,0 +1,16 @@
+
+
+PROPERTIES FILE
+ --- data stored as Key/value pairs
+ --- ".properties" extension
+
+
+
+EXCEL FILES 
+
+you need to install the excel plug-in
+download "apache poi jars"
+configure the jars for tis working oriject
+have some excel files to work wiht
+use Java class to read excel data 
+
