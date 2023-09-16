@@ -1,0 +1,8 @@
+
+
+XML Groupings
+
+Test Group is used to collect different testNG cases into a cooridnated action of one sequence. 
+1. you can covert on class (sing testng case) into a xml file
+2. you can modify a xml file into custom group xml consiting multiple classes.
+3. you can convert a whole package into a group. 
