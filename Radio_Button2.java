@@ -33,7 +33,8 @@ public class Radio_Button2 {
 	
 	public void allradio() throws InterruptedException 
 	{
-		List<WebElement> allEle = driver.findElements(By.xpath("//input[@name='sex']"));  //sex is value that applies to all gender options
+		List<WebElement> allEle = driver.findElements(By.xpath("//input[@name='sex']")); 
+		//sex is value that applies to all gender options
 		int cnt = allEle.size();
 		System.out.println("Count is: " + cnt);
 		
@@ -71,10 +72,10 @@ public class Radio_Button2 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.gecko.driver", "/Users/oluswagger/Oluswagger Documents/_Cloud Learnings/Intellipaat/Java_Selenium_Eclipse/drivers/geckodriver");
-		
-		driver = new FirefoxDriver();
-		
+		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
+		 driver = new ChromeDriver();
+		//driver = new FirefoxDriver();		
 		driver.get("https://www.facebook.com/");
 		Thread.sleep(2000);
 				
