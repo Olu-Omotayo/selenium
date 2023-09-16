@@ -1,0 +1,21 @@
+
+It is a good idea to employ parameter locators and not hardcode your variables into ypur scrit.
+This allows for flexibility when you have to chnage your parameters without needing to makes changes in a lot of scripts
+
+
+
+Example Task: --
+    1. Login  --unm, pwd, login
+    
+    2. create properties  file ---webelement locators (.properties)
+     -- KEY - VALUES format
+     
+    3. Java class - no main() method
+        - method1 -- for reading in data from properties file
+        - method2 -- find the webelement 
+        
+    4. java class with Main() method
+        OR
+       TestNG  test case 
+       
+       
