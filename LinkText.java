@@ -9,7 +9,8 @@ public class LinkText {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "/Users/oluswagger/Oluswagger Documents/_Cloud Learnings/Intellipaat/Java_Selenium_Eclipse/drivers/geckodriver");
+		WebDriverManager.chromedriver().setup();
+		//WebDriver driver = new ChromeDriver();
 		WebDriver driver = new FirefoxDriver();
 		driver.get("https://www.facebook.com/");
 		
