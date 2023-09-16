@@ -8,8 +8,10 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class Login_example2 {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver", "/Users/oluswagger/Oluswagger Documents/_Cloud Learnings/Intellipaat/Java_Selenium_Eclipse/drivers/geckodriver");
-		WebDriver driver = new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.firefoxdriver().setup();
+		WebDriver driver = new ChromeDriver();
+		//WebDriver driver = new FirefoxDriver();
 		driver.get("https://demo.guru99.com/selenium/newtours/");
 		
 		driver.findElement(By.name("userName")).sendKeys("user1");
